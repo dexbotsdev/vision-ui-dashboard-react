@@ -22,6 +22,9 @@
 */
 
 import { createContext, useContext } from "react";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // The Timeline main context
 const Timeline = createContext();
